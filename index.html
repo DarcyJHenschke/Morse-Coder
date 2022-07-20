@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="morse-coder">
+            <h2>Morse Code Translator</h2>
+            <div class="text-area-title">
+                <label class="label" id="textLabel" for="text">Text:</label>
+            </div>
+            <div class="text-area-wrapper" id="textWrapper">
+                <textarea
+                    name="text"
+                    class="text-area"
+                    id="text"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+            </div>
+            <div class="text-area-title">
+                <label class="label" id="morseLabel" for="Morse">Morse:</label>
+            </div>
+
+            <div class="text-area-wrapper" id="morseWrapper">
+                <textarea
+                    name="morse"
+                    id="morse"
+                    class="text-area"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+            </div>
+            <div class="buttons-wrapper">
+                <div class="button" id="clear">Clear</div>
+                <div class="button" id="dot">.</div>
+                <div class="button" id="dash">-</div>
+                <div class="button" id="space">Space</div>
+            </div>
+        </div>
+    </body>
+</html>

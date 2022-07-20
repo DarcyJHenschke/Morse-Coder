@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  justify-content: center;
+  color: lightgrey;
+  font-family: "Roboto", sans-serif;
+}
+
+.morse-coder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  border: 2px solid black;
+  border-radius: 30px;
+  width: 400px;
+  height: 600px;
+  background-color: #303030;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.text-area-wrapper {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+#textWrapper {
+  background-color: #484848;
+}
+
+#morseWrapper {
+  background-color: #ff4433;
+}
+
+.text-area {
+  width: 340px;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+
+.text-area-title {
+  width: 320px;
+  display: flex;
+  justify-content: left;
+}
+
+#text {
+  background-color: #484848;
+  color: lightgray;
+}
+
+#morse {
+  background-color: #ff4433;
+  color: lightgray;
+}
+
+.buttons-wrapper {
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #484848;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 70px;
+  font-size: 30px;
+}
+
+#clear,
+#dot,
+#dash {
+  border-right: 2px solid #484848;
+}
