@@ -1,5 +1,5 @@
-import { textToMorse, morseToText } from "./pure-functions";
-import { library, libraryReversed } from "./library";
+import { textToMorse, morseToText } from "./pure-functions.js";
+import { library, libraryReversed } from "./library.js";
 
 const text = document.getElementById("text");
 const morse = document.getElementById("morse");
@@ -12,9 +12,6 @@ text.addEventListener("input", () => {
 // takes string input value in text area and runs it throug the pure function which converts it
 morse.addEventListener("input", () => {
     text.value = morseToText(morse.value, libraryReversed);
-    if (morse.value.includes("a")) {
-        morse.value = morse.value.replace("a", "");
-    }
 });
 
 // functionality for buttons when clicked
