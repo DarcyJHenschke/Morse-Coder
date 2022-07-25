@@ -30,19 +30,27 @@ function buttonFunctions() {
 
     if (buttonText === ".") {
         morse.value += ".";
-        text.value = morseToText(morse.value);
+        text.value = morseToText(morse.value, libraryReversed);
     }
 
     if (buttonText === "-") {
         morse.value += "-";
-        text.value = morseToText(morse.value);
+        text.value = morseToText(morse.value, libraryReversed);
     }
     if (buttonText === "Space") {
         morse.value += " ";
-        text.value = morseToText(morse.value);
+        text.value = morseToText(morse.value, libraryReversed);
     }
     if (buttonText === "Break") {
         morse.value += "/";
-        text.value = morseToText(morse.value);
+        text.value = morseToText(morse.value, libraryReversed);
+    }
+
+    if (buttonText === "Del") {
+        morse.value = morse.value
+            .trim()
+            .substring(0, morse.value.trim().length - 1);
+
+        text.value = morseToText(morse.value, libraryReversed);
     }
 }

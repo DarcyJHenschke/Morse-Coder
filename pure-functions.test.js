@@ -56,7 +56,7 @@ describe("tests of morse to text function for functionality and edge cases", () 
         expect(morseToText("././.", libraryReversed)).toBe("e e e");
         expect(morseToText(". / . / .", libraryReversed)).toBe("e e e");
     });
-    test("should disregard all characters except dash, dot and foward slash", () => {
+    test("should still convert even if letters and numbers are in the string", () => {
         expect(
             morseToText(
                 "- aa.... .. b... / .. .de.. / .- / .ef.. - .-. z.. -. --.c",
